@@ -1,0 +1,18 @@
+id: Cosy
+name: Cosy
+author:
+  name: OnlyTL
+  website: https://onlytl.com
+description: A Cosy Halo theme By PaperCSS
+logo: 
+website: https://github.com/OnlyTL/halo-theme-cosy
+repo: https://github.com/OnlyTL/halo-theme-cosy
+version: 1.0.0 
+require: 1.3.0
+postMetaField:
+  - music_url               # 假设在文章页面需要播放背景音乐，用户可以自己填写音乐地址。
+  - download_url            # 假设在文章页有一个下载按钮，那么用户也可以自己填写加载地址。
+
+sheetMetaField:
+  - music_url 
+  - download_url
