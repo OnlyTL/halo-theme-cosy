@@ -33,7 +33,7 @@
             <div class="card" style="width: 100%">
               <div class="card-body">
                 <h4 class="card-title font-chinese">
-                  ${post.title}
+                  <a class="noline-a font-chinese" href="${post.fullPath!}">${post.title}</a>
                   <#if post.topped>
                     <span class="badge secondary topBadges">置顶</span>
                   </#if>
@@ -84,32 +84,19 @@
       </div>
     </div>
 
-    <#--  右侧  -->
-    <div class="sm-12 md-4 col sidebar">
-      <div class="paper">
-        <h3 class="sidebar-title" style="text-align:center">
-          <a href="#">${blog_title!}</a>
-        </h3>
-        <div class="row">
-          <@menuTag method="tree">
-            <#list menus? reverse as menu>
-              <div class="collapsible">
-                <input id="collapsible1" type="checkbox" name="collapsible">
-                <label class="font-chinese" for="collapsible1">
-                  ${menu.name!}
-                </label>
-              </div>
-            </#list>
-          </@menuTag>
-        </div>
-      </div>
+    <#include "module/left_page.ftl">
 
-      <div class="paper">
-        <div class="row flex-center">
-          <p>Made with 💛 by <a href="https://vlaservich.com" target="_blank">TL</a> !</p>
-        </div>
-      </div>
-    </div>
+    <!--一言-->
+    <script>
+        fetch('https://v1.hitokoto.cn')
+            .then(response => response.json())
+            .then(data => {
+            const hitokoto = document.getElementById('hitokoto_text')
+            hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid
+            hitokoto.innerText = data.hitokoto
+            })
+            .catch(console.error);
+    </script>
   </div>
 
 </@layout>

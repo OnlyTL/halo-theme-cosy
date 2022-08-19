@@ -36,21 +36,6 @@
         包含：统计代码，底部信息
     -->
     <@global.footer />
-
-
-    <!--一言-->
-    <script>
-        fetch('https://v1.hitokoto.cn')
-            .then(response => response.json())
-            .then(data => {
-            const hitokoto = document.getElementById('hitokoto_text')
-            hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid
-            hitokoto.innerText = data.hitokoto
-            })
-            .catch(console.error);
-
-    </script>
-    
     </body>
 </html>
 </#macro>

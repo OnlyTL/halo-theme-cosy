@@ -22,6 +22,8 @@ window.onload=function(){
             document.getElementsByTagName('body')[0].style.backgroundColor='#ffffff';
             dark.setAttribute('currentType','lighting');
         }
-     });
+     });    
 }
+
+
 

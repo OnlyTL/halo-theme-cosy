@@ -11,7 +11,18 @@
 
 <img width="2149" alt="image" src="https://halo-blog-1259543051.cos.ap-chengdu.myqcloud.com/halo-theme-cosy%2Fracy-preview-dark.jpg">
 
+### 文章页
+<img width="2149" alt="image" src="https://halo-blog-1259543051.cos.ap-chengdu.myqcloud.com/halo-theme-cosy%2Fcosy-preview-post.jpg">
+
+### 日志页
+<img width="2149" alt="image" src="https://halo-blog-1259543051.cos.ap-chengdu.myqcloud.com/halo-theme-cosy%2Fcosy-preview-journal.jpg">
 
 ## 说明
 
 &emsp;&emsp;一个后端CV工程师 ，对于前端一窍不通，能力有限，代码很烂，此项目仅用于练习消遣。后续会逐步完善，
+
+## 完成功能
+
+- 首页
+- 文章页
+- 黑暗模式（有bug）

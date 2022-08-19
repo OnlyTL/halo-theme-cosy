@@ -1,12 +1,12 @@
 @font-face {
-    font-family: chinese-code;
-    src: url("../font/chinese-code.ttf");
+    font-family: chinese-font;
+    src: url("../fonts/启体简.ttf");
 }
 
 
 .font-chinese{
-    font-family: 'chinese-code';
-    font-weight: bold;
+    font-family: 'chinese-font';
+    /* font-weight: bold; */
 }
 
 #top{
@@ -23,6 +23,7 @@
     flex-direction: column;
     gap: 20px;
 }
+
 
 /*右侧菜单Start*/
 .collapsible,.full-width {
@@ -74,12 +75,24 @@
 }
 
 
-
 /*footer 样式Start*/
 .footer-badges{
     text-align: center;
 
 }
-.badges-a{
+
+.noline-a{
     background-image: none;
+}
+
+
+.article h1, 
+.article h2,
+.article h3,
+.article h4,
+.article h5,
+.article a,
+.article p,
+.article li{
+    font-family: 'chinese-font';
 }

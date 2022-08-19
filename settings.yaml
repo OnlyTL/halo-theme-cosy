@@ -67,3 +67,22 @@ home:
           label: 开启
         - value: false
           label: 关闭
+    post_comment:
+      name: post_comment
+      label: 开启文章评论
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+page_title:
+  label: 页面标题
+  items:
+    journal:
+      name: journal
+      label: 日志页面标题
+      type: text
+      placeholder: '${填入内容}-博客名称'
