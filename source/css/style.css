@@ -3,19 +3,17 @@
     src: url("../fonts/chinese-font.ttf");
 }
 
-
 .chinese-font{
     font-family: 'chinese-font';
-    /* font-weight: bold; */
+}
+
+.noline-a{
+    background-image: none;
 }
 
 #top{
     max-width: 1400px;
 }
-
-/* body {
-    background-color: #41403e;
-} */
 
 /*中间文章列表*/
 .card-list{
@@ -74,25 +72,7 @@
     cursor:pointer;
 }
 
-
 /*footer 样式Start*/
-.footer-badges{
-    text-align: center;
-
-}
-
-.noline-a{
-    background-image: none;
-}
-
-
-.article h1, 
-.article h2,
-.article h3,
-.article h4,
-.article h5,
-.article a,
-.article p,
-.article li{
-    font-family: 'chinese-font';
+.footer-value{
+    margin-left: -7px;
 }

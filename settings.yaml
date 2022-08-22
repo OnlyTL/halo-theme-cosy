@@ -58,8 +58,9 @@ home:
   items:
     hitokoto:
       name: hitokoto
-      label: 首页展示一言（开启后描述语将失效）
+      label: 是否开启一言
       type: radio
+      description: "注意：开启后，所有页面描述将变为一言"
       data-type: bool
       default: true
       options:
@@ -79,15 +80,44 @@ home:
         - value: false
           label: 关闭
 page_title:
-  label: 页面标题
+  label: 自定义页面标题
   items:
-    journal:
-      name: journal
+    journals_title:
+      name: journals_title
       label: 日志页面标题
       type: text
-      placeholder: '${填入内容}-博客名称'
-    photos:
-      name: photos
+      default: 日志
+    photos_title:
+      name: photos_title
       label: 相册页面标题
       type: text
-      placeholder: '${填入内容}-博客名称'
+      default: 相册
+    links_title:
+      name: links_title
+      label: 友情链接页面名称
+      type: text
+      default: 友情链接
+page_description:
+  label: 自定义页面描述
+  items:
+    journals_description:
+      name: journals_description
+      label: 日志页面描述
+      type: text
+      description: "注意：所有如果开启了一言，将覆盖描述"
+    photos_description:
+      name: photos_description
+      label: 相册页面描述
+      type: text
+    links_description:
+      name: links_description
+      label: 友情链接页面名称
+      type: text
+other:
+  label: 其他
+  items:
+    TimeStatistics:
+      name: TimeStatistics
+      label: "站点运行时间统计"
+      type: text
+      description: "填入起始时间，格式：月/日/年 时:分:秒，如08/20/2018 12:00:00"

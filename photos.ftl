@@ -1,5 +1,5 @@
 <#include "module/macro.ftl">
-<@layout title="${settings.photos}- ${blog_title!}">
+<@layout title="${settings.photos_title}- ${blog_title!}">
     <div id="top" class="row site">
         <#--  中间  -->
         <div class="sm-12 md-8 col">
@@ -8,7 +8,7 @@
                 <div class="demo-title">
                     <div class="row flex-center">
                         <div class="text-center">
-                            <h1 class="chinese-font">${settings.photos}</h1>
+                            <h1 class="chinese-font">${settings.photos_title}</h1>
                             <h5 class="card-subtitle chinese-font">
                                 远上寒山石径斜，白云深处有人家。
                             </h5>
@@ -25,22 +25,16 @@
                             <#assign team_indexStr = "${team_index+1}"/>
                             <input id="${tabStr+team_indexStr}" type="radio" name="tabs" checked>
                             <label for="${tabStr+team_indexStr}">${team.team}</label>
-                            <#--  <h1>${team.team}</h1>  -->
-                            <#--  <#list team.photos as photo>
-                                <div class="content" id="${contentStr+team_indexStr}">
-                                    <img alt="${photo.description}" src="${photo.url}"/>
-                                </div>
-                            </#list>  -->
                         </#list>
-                        <p></p>
                         <#list teams as team>
-                            <#assign team_indexStr = "${team_index+1}"/>
-                            <#--  <h1>${team.team}</h1>  -->
-                            <#list team.photos as photo>
-                                <div class="content" id="${contentStr+team_indexStr}">
-                                    <img  alt="${photo.description}" src="${photo.url}"/>
+                            <div class="content" id="${contentStr+team_indexStr}">
+                                <div class="row flex-center">
+                                    <#assign team_indexStr = "${team_index+1}"/>
+                                    <#list team.photos as photo>
+                                        <img class="col-3 col float-left" alt="${photo.description}" src="${photo.url}"/>
+                                    </#list>
                                 </div>
-                            </#list>
+                            </div>
                         </#list>
                     </@photoTag>
                 </div>

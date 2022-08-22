@@ -4,11 +4,6 @@
   Global PaperCSS Config
 */
 @import url("https://fonts.googleapis.com/css?family=Neucha|Patrick+Hand+SC");
-
-@font-face {
-  font-family: chinese-font;
-  src: url("../fonts/chinese-font.ttf");
-}
 html {
   --primary: #41403e;
   --secondary: #0071de;
@@ -257,7 +252,7 @@ hr {
 }
 
 pre {
-  font-family: 'chinese-font';
+  font-family: monospace, monospace;
   font-size: 1em;
 }
 
@@ -286,7 +281,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: 'chinese-font';
+  font-family: monospace, monospace;
   font-size: 1em;
 }
 
@@ -342,7 +337,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: 'chinese-font';
+  font-family: sans-serif;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
@@ -968,7 +963,7 @@ pre code {
 html {
   color: #41403e;
   color: var(--primary);
-  font-family: 'chinese-font';
+  font-family: "Neucha", sans-serif;
   font-size: 20px;
 }
 
@@ -986,7 +981,7 @@ input,
 textarea,
 select,
 option {
-  font-family: 'chinese-font';
+  font-family: "Neucha", sans-serif;
 }
 
 h1,
@@ -995,7 +990,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'chinese-font';
+  font-family: "Patrick Hand SC", sans-serif;
   font-weight: normal;
 }
 
