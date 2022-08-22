@@ -19,9 +19,9 @@
             <div class="text-center">
               <h1>${blog_title!}</h1>
               <#if (settings.hitokoto)?? && settings.hitokoto?c == 'true'>
-                <h5 class="home-description font-chinese" id="hitokoto_text">${settings.motto!}</h3>   
+                <h5 class="home-description chinese-font" id="hitokoto_text">${settings.motto!}</h3>   
               <#elseif (settings.motto)?? && settings.motto?trim != ''>
-                <h5 class="home-description font-chinese">${user.description!}</h3>
+                <h5 class="home-description chinese-font">${user.description!}</h3>
               </#if>
             </div>
           </div>
@@ -32,8 +32,8 @@
           <#list posts.content as post>
             <div class="card" style="width: 100%">
               <div class="card-body">
-                <h4 class="card-title font-chinese">
-                  <a class="noline-a font-chinese" href="${post.fullPath!}">${post.title}</a>
+                <h4 class="card-title chinese-font">
+                  <a class="noline-a chinese-font" href="${post.fullPath!}">${post.title}</a>
                   <#if post.topped>
                     <span class="badge secondary topBadges">置顶</span>
                   </#if>
@@ -43,7 +43,7 @@
                         ${post.createTime?string["yyyy.MM.dd"]!}
                     </span>
                 </h5>
-                <p class="card-text font-chinese">${post.summary!}</p>
+                <p class="card-text chinese-font">${post.summary!}</p>
                 <#--  <button>Let me go here!</button>  -->
               </div>
               <div class="card-footer">

@@ -86,3 +86,8 @@ page_title:
       label: 日志页面标题
       type: text
       placeholder: '${填入内容}-博客名称'
+    photos:
+      name: photos
+      label: 相册页面标题
+      type: text
+      placeholder: '${填入内容}-博客名称'

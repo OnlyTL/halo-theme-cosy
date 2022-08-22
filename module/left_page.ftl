@@ -10,7 +10,7 @@
             <div class="collapsible">
             <input id="collapsible1" type="checkbox" name="collapsible">
             <label for="collapsible1">
-                <a class="noline-a font-chinese" href="${menu.url!}" target="${menu.target!}">${menu.name!}</a>
+                <a class="noline-a chinese-font" href="${menu.url!}" target="${menu.target!}">${menu.name!}</a>
             </label>
             </div>
         </#list>

@@ -10,18 +10,18 @@
             <div class="demo-title">
                 <div class="row flex-center">
                     <div class="text-center">
-                        <h1 class="font-chinese">${post.title!}</h1>
+                        <h1 class="chinese-font">${post.title!}</h1>
                         <h5 class="card-subtitle">
-                            <span class="font-chinese margin">
+                            <span class="chinese-font margin">
                                 发布时间：${post.createTime?string["yyyy.MM.dd"]!}
                             </span>
-                            <span class="font-chinese margin">
+                            <span class="chinese-font margin">
                                 浏览数：${post.visits!}
                             </span>
-                            <span class="font-chinese margin">
+                            <span class="chinese-font margin">
                                 评论数：${post.commentCount!}
                             </span>
-                            <span class="font-chinese margin">
+                            <span class="chinese-font margin">
                                 字数：${post.wordCount!}
                             </span>
                         </h5>
@@ -31,6 +31,8 @@
             <article class="article">
                 ${post.formatContent!}
             </article>
+
+            
             
             <!--评论  TODO  为什么不显示评论呢-->
             <#include "module/comment.ftl">

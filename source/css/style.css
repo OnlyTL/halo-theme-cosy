@@ -1,10 +1,10 @@
 @font-face {
     font-family: chinese-font;
-    src: url("../fonts/启体简.ttf");
+    src: url("../fonts/chinese-font.ttf");
 }
 
 
-.font-chinese{
+.chinese-font{
     font-family: 'chinese-font';
     /* font-weight: bold; */
 }

@@ -9,7 +9,7 @@
             <div class="demo-title">
                 <div class="row flex-center">
                     <div class="text-center">
-                        <h1 class="font-chinese">日志</h1>
+                        <h1 class="chinese-font">日志</h1>
                         <h5 class="card-subtitle">
                             远上寒山石径斜，白云深处有人家。
                         </h5>

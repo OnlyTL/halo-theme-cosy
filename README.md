@@ -2,8 +2,11 @@
 
 一款使用 [PaperCSS](https://www.getpapercss.com/) 开发的 Halo主题, 简约风格,开发中...
 
-## 预览图片
+## Demo预览
 
+[OnlyTL](https://blog.onlytl.com)
+
+## 预览图片
 
 <img width="2149" alt="image" src="https://halo-blog-1259543051.cos.ap-chengdu.myqcloud.com/halo-theme-cosy%2Fracy-preview-light.jpg">
 
