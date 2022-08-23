@@ -27,11 +27,8 @@
                         </li>
                     </#list>
                 </ul>
-                <!--评论  TODO  为什么不显示评论呢？？？-->
-                <#include "module/comment.ftl">
             </div>
         </div>
-        
         <#include "module/left_page.ftl">
         <#include "module/hitokoto.ftl">
   </div>
