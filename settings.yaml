@@ -102,6 +102,16 @@ page_title:
       label: 标签页面名称
       type: text
       default: 标签
+    archives_title:
+      name: archives_title
+      label: 归档页面名称
+      type: text
+      default: 归档
+    categories_title:
+      name: categories_title
+      label: 分类页面名称
+      type: text
+      default: 分类栏目
 page_description:
   label: 自定义页面描述
   items:
@@ -121,6 +131,14 @@ page_description:
     tags_description:
       name: tags_description
       label: 标签页面描述
+      type: text
+    archives_description:
+      name: archives_description
+      label: 归档页面描述
+      type: text
+    categories_description:
+      name: categories_description
+      label: 分类页面描述
       type: text
 other:
   label: 其他
