@@ -19,6 +19,11 @@
 
         <script src="${theme_base!}/source/js/script.js"></script>
 
+        <link type='text/css' rel="stylesheet" href="https://cdn.jsdelivr.net/npm/viewerjs@1.5.0/dist/viewer.min.css">
+
+        <script data-pjax-viewer src="https://cdn.jsdelivr.net/npm/viewerjs@1.5.0/dist/viewer.min.js"></script>
+
+
         <title>${title}</title>
     </head>
     <body>

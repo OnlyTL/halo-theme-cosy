@@ -97,6 +97,11 @@ page_title:
       label: 友情链接页面名称
       type: text
       default: 友情链接
+    tags_title:
+      name: tags_title
+      label: 标签页面名称
+      type: text
+      default: 标签
 page_description:
   label: 自定义页面描述
   items:
@@ -111,7 +116,11 @@ page_description:
       type: text
     links_description:
       name: links_description
-      label: 友情链接页面名称
+      label: 友情链接页面描述
+      type: text
+    tags_description:
+      name: tags_description
+      label: 标签页面描述
       type: text
 other:
   label: 其他

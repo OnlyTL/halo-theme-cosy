@@ -8,10 +8,12 @@
                 <div class="demo-title">
                     <div class="row flex-center">
                         <div class="text-center">
-                            <h1 class="home-description chinese-font" id="hitokoto_text">${settings.links_title}</h1>   
-                            <h5 class="card-subtitle chinese-font">
-                                远上寒山石径斜，白云深处有人家。
-                            </h5>
+                            <h1>${settings.links_title}</h1>
+                            <#if (settings.hitokoto)?? && settings.hitokoto?c == 'true'>
+                                <h5 class="card-subtitle" id="hitokoto_text"></h3>   
+                            <#elseif (settings.links_description)?? && settings.links_description?trim != ''>
+                                <h5 class="card-subtitle">${settings.links_description}</h3>
+                            </#if>
                         </div>
                     </div>
                 </div>
@@ -32,6 +34,7 @@
             </div>
         </div>
         <#include "module/left_page.ftl">
+        <#include "module/hitokoto.ftl">
     </div>
     
 </@layout>

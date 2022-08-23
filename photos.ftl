@@ -8,10 +8,12 @@
                 <div class="demo-title">
                     <div class="row flex-center">
                         <div class="text-center">
-                            <h1 class="chinese-font">${settings.photos_title}</h1>
-                            <h5 class="card-subtitle chinese-font">
-                                远上寒山石径斜，白云深处有人家。
-                            </h5>
+                            <h1>${settings.photos_title}</h1>
+                            <#if (settings.hitokoto)?? && settings.hitokoto?c == 'true'>
+                                <h5 class="card-subtitle" id="hitokoto_text"></h3>   
+                            <#elseif (settings.photos_description)?? && settings.photos_description?trim != ''>
+                                <h5 class="card-subtitle">${settings.photos_description}</h3>
+                            </#if>
                         </div>
                     </div>
                 </div>
@@ -31,7 +33,7 @@
                                 <div class="row flex-center">
                                     <#assign team_indexStr = "${team_index+1}"/>
                                     <#list team.photos as photo>
-                                        <img class="col-3 col float-left" alt="${photo.description}" src="${photo.url}"/>
+                                        <img class="col-3 col float-left" popover-top="${photo.description}" alt="${photo.description}" src="${photo.url}"/>
                                     </#list>
                                 </div>
                             </div>
@@ -44,6 +46,15 @@
             </div>
         </div>
         <#include "module/left_page.ftl">
+        <#include "module/hitokoto.ftl">
+        
+        <script>
+            if (document.getElementById('top')) {
+                console.log(top);
+                new Viewer(document.getElementById('top'), {
+                    toolbar: false,
+                });
+            }
+        </script>
     </div>
-    
 </@layout>

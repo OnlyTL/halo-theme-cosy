@@ -10,7 +10,6 @@
 
 window.onload=function(){
     var dark= document.getElementById('darkMenu');
-    console.log(dark);
     dark.addEventListener('click',function(){
         console.log('切换黑暗模式');
         if(dark.getAttribute('currentType') == 'lighting'){
@@ -22,7 +21,7 @@ window.onload=function(){
             document.getElementsByTagName('body')[0].style.backgroundColor='#ffffff';
             dark.setAttribute('currentType','lighting');
         }
-     });    
+     });       
 }
 
 

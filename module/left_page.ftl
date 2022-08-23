@@ -10,17 +10,26 @@
             <div class="collapsible">
             <input id="collapsible1" type="checkbox" name="collapsible">
             <label for="collapsible1">
-                <a class="noline-a chinese-font" href="${menu.url!}" target="${menu.target!}">${menu.name!}</a>
+                <a class="noline-a" href="${menu.url!}" target="${menu.target!}">${menu.name!}</a>
             </label>
             </div>
         </#list>
         </@menuTag>
+
+       
+
     </div>
     </div>
 
     <div class="paper">
-    <div class="row flex-center">
-        <p>Made with 💛 by <a href="https://vlaservich.com" target="_blank">TL</a> !</p>
+        <div class="row flex-center">
+            <p>Made with 💛 by <a href="https://vlaservich.com" target="_blank">TL</a> !</p>
+        </div>
     </div>
-    </div>
+
+    <#if is_post??>
+        <div class="paper">
+            <aside id="toc" class="toc"></aside>
+        </div>
+    </#if>
 </div>
